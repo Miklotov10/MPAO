@@ -57,7 +57,7 @@ class SpacesController extends AppController {
 			}
 		}
 		$facilities = $this->Space->Facility->find('list');
-		$genders = $this->Space->Gender->find('list');
+		$genders = $this->Space->Gender->find('list', array('conditions' => array('Gender.lookup_type_id' => 4)));
 		$this->set(compact('facilities', 'genders'));
 	}
 

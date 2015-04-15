@@ -105,6 +105,10 @@ class UsersController extends AppController {
 			$this->User->create();
 			$this->request->data['User']['group_id'] = 3;
 			if ($this->User->save($this->request->data)) {
+
+				//Login User to go to the reservations
+				$this->Auth->login();
+
 				$this->Session->setFlash(__('The user has been saved.'));
 
 				// The ID of the newly created user has been set
@@ -116,9 +120,8 @@ class UsersController extends AppController {
 	            unset($this->request->data['User']['username']);
 	            unset($this->request->data['User']['password']);
 	            $this->User->Account->save($this->request->data['User']);
-	            debug($this->request->data);
-	            die;
-				return $this->redirect(array('action' => 'index'));
+
+				return $this->redirect(array('controller' => 'reservations', 'action' => 'add'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
