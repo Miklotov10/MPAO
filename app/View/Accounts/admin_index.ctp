@@ -8,9 +8,8 @@
 			<th><?php echo $this->Paginator->sort('middle_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('last_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('code'); ?></th>
+			<th><?php echo $this->Paginator->sort('token'); ?></th>
 			<th><?php echo $this->Paginator->sort('address'); ?></th>
-			<th><?php echo $this->Paginator->sort('bank_account_number'); ?></th>
 			<th><?php echo $this->Paginator->sort('mobile_number'); ?></th>
 			<th><?php echo $this->Paginator->sort('telephone_number'); ?></th>
 			<th><?php echo $this->Paginator->sort('city_id'); ?></th>
@@ -28,9 +27,8 @@
 		<td><?php echo h($account['Account']['middle_name']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['last_name']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['email']); ?>&nbsp;</td>
-		<td><?php echo h($account['Account']['code']); ?>&nbsp;</td>
+		<td><?php echo h($account['Account']['token']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['address']); ?>&nbsp;</td>
-		<td><?php echo h($account['Account']['bank_account_number']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['mobile_number']); ?>&nbsp;</td>
 		<td><?php echo h($account['Account']['telephone_number']); ?>&nbsp;</td>
 		<td>
