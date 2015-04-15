@@ -59,8 +59,8 @@ class RentalPromosController extends AppController {
 		$facilities = $this->RentalPromo->Facility->find('list');
 		//$promos = $this->RentalPromo->Promo->find('list');
 		$spaces = $this->RentalPromo->Space->find('list');
-		$rateTypes = $this->RentalPromo->RateType->find('list');
-		$references = $this->RentalPromo->Reference->find('list');
+		$rateTypes = $this->RentalPromo->RateType->find('list', array('conditions' => array('RateType.lookup_type_id' => 7)));
+		$references = $this->RentalPromo->Reference->find('list', array('conditions' => array('Reference.lookup_type_id' => 8)));
 		$this->set(compact('facilities', /*'promos',*/ 'spaces', 'rateTypes', 'references'));
 	}
 
