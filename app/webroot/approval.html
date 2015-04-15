@@ -1,0 +1,704 @@
+
+
+<!Doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Ateneo</title>
+
+        <link href ="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/datepicker.css">
+              <script type="text/javascript" language="javascript" src="js/mediajquery.js"></script>
+
+
+<style>
+.mygrid-wrapper-div {
+  
+    overflow: scroll;
+}
+
+  .alignRight { text-align: right; }
+
+</style>
+
+
+<script language="javascript" type="text/javascript" class="init">
+
+$(function() {  
+    var window_height = $(window).height(),
+       content_height = window_height - 200;
+
+    $('.mygrid-wrapper-div').height(content_height);
+});
+
+$( window ).resize(function() {
+    var window_height = $(window).height(),
+       content_height = window_height - 200;
+    $('.mygrid-wrapper-div').height(content_height);
+});
+
+$(document).ready(function(){
+    $(".hoverDiv").hover(function(){
+        $(this).css('boxShadow' ,"4px 8px 12px #056bac");
+    }, function(){
+        $(this).css('boxShadow' ,"4px 8px 12px #313332");
+    });
+});
+
+</script>
+
+   </head>
+
+    <body>
+
+<div class = "panel panel-primary" >
+<div class = "panel-heading">Jpollock</br>Reservation Form
+
+  </div>
+          <div class="panel-body">
+
+            <div class="alert alert-info"></br>
+
+           
+
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Title of activity:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Sleeping</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Date:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>03-12-2015</label>
+                </div>
+
+                </div></br>
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Nature of activity:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Logging</label>
+                </div>
+
+                  <div class = "col-md-2">
+                <label>Mobile Number:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>09125023105</label>
+                </div>
+                </div></br>
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Name of Organizer:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Arnel Cabinti</label>
+                </div>
+                  <div class = "col-md-2">
+                <label>Email Address:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>dada@yahoo.com</label>
+                </div>
+                </div></br>
+
+                  <div class="row">
+              <div class = "col-md-3">
+              <label>Authorized Representative:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Jobel Panes</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Fax or Landline:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>123-4569</label>
+                </div>
+
+
+                </div></br>
+
+                  <div class="row">
+              <div class = "col-md-3">
+              <label>Position</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Manager</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Address:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>#10 diamon st. Quezon City</label>
+                </div>
+                </div></br>
+
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label></label>
+                </div>
+              <div class = "col-md-4">
+                <label></label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>No of Person</label>
+                </div>
+                <div class = "col-md-2">
+                <label>12</label>
+                </div>
+                </div></br>
+
+
+               </div>
+
+          </div>
+
+          </div>
+
+
+
+
+               
+
+       
+<!-- IF room type: This panel will displat when facility is room type -->  
+
+
+
+         <div class='panel panel-primary'>
+
+                                  <div class='panel-heading'>JPollock</br>Airconditioned Bedrooms</div>
+                                  <div class='panel-body'>
+
+
+                   <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+
+                                     <table width='100%' border='1' class='bg-warning' id='wrapper'>
+                        <tr class='bg-success'>
+                          <td width='161' rowspan='2'><div align='center'><strong>Rentable Space</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Dates</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Time</strong></div></td>
+                          <td colspan='3'><div align='center'><strong>Total Number of Persons</strong></div></td>
+                          <td width='160' rowspan='2'><div align='center'><strong>Amount</strong></div></td>
+                        </tr>
+                        <tr class='bg-success'>
+                          <td width='186'><div align='center'>IN</div></td>
+                          <td width='174'><div align='center'>OUT</div></td>
+                          <td width='164'><div align='center'>IN</div></td>
+                          <td width='109'><div align='center'>OUT</div></td>
+                          <td width='100'><div align='center'>Male</div></td>
+                          <td width='89'><div align='center'>Female</div></td>
+                          <td width='89'><div align='center'>Both</div></td>
+                        </tr>
+                        <tr>
+
+
+     
+                       
+
+                        <td>Room201</td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>
+                         1:00
+                          </div></td>
+                          <td class=''><div align='center'>2:00PM</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                              <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='right'>₱0.00</div></td>
+                        </tr>
+                        <tr class='bg-info'>
+                          <td height='24' class=''><strong>SUBTOTAL:</strong></td>
+                          <td colspan='7' class=''><div align='right'></div></td>
+                          <td class=''><div align='right'><label>₱0.00</label></div></td>
+                        </tr>
+
+           
+        
+
+
+                    </table>
+
+
+                
+    
+
+                                  </div>
+                                    </div>
+                                      </div>
+                            </div>
+
+                      
+       
+
+   <!-- noaricon -->
+
+
+        
+
+
+                              <div class='panel panel-primary'>
+
+                                  <div class='panel-heading'>JPollock</br>No Airconditioned Bedrooms</div>
+                                  <div class='panel-body'
+
+                                     <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+
+
+                                     <table width='100%' border='1' class='bg-warning' id='wrapper'>
+                        <tr class='bg-success'>
+                          <td width='161' rowspan='2'><div align='center'><strong>Rentable Space</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Dates</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Time</strong></div></td>
+                          <td colspan='3'><div align='center'><strong>Total Number of Persons</strong></div></td>
+                          <td width='160' rowspan='2'><div align='center'><strong>Amount</strong></div></td>
+                        </tr>
+                        <tr class='bg-success'>
+                          <td width='186'><div align='center'>IN</div></td>
+                          <td width='174'><div align='center'>OUT</div></td>
+                          <td width='164'><div align='center'>IN</div></td>
+                          <td width='109'><div align='center'>OUT</div></td>
+                          <td width='100'><div align='center'>Male</div></td>
+                          <td width='89'><div align='center'>Female</div></td>
+                          <td width='89'><div align='center'>Both</div></td>
+                        </tr>
+                        <tr>
+
+   
+
+
+
+
+                       
+
+                       <td>Room202</td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>
+                         1:00
+                          </div></td>
+                          <td class=''><div align='center'>2:00PM</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                              <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='right'>₱0.00</div></td>
+                        </tr>
+                        <tr class='bg-info'>
+                          <td height='24' class=''><strong>SUBTOTAL:</strong></td>
+                          <td colspan='7' class=''><div align='right'></div></td>
+                          <td class=''><div align='right'><label>₱0.00</label></div></td>
+                        </tr>
+
+
+       
+
+
+
+
+
+                   </table>
+
+                        </div>
+
+        </div>                           
+               </div>
+                            </div>
+
+
+<!-- end room type -->
+
+
+                       
+<!-- IF event type: This panel will displat when facility is event type -->  
+
+
+                  
+                            
+                                <div class='panel panel-primary'>
+
+                                    <div class='panel-heading'>GESU</br>Main Church</div>
+                                    <div class='panel-body'>
+   <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+                                  
+
+                               
+
+                                <table width='100%' border='1' class='bg-warning' id='wrapper'>
+                        <tr class='bg-success'>
+                          <td width='161' rowspan='2'><div align='center'><strong>Rentable Space</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Dates</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Time</strong></div></td>
+                          <td colspan='3'><div align='center'><strong>Total Number of Persons</strong></div></td>
+                          <td width='160' rowspan='2'><div align='center'><strong>Amount</strong></div></td>
+                        </tr>
+                        <tr class='bg-success'>
+                          <td width='186'><div align='center'>IN</div></td>
+                          <td width='174'><div align='center'>OUT</div></td>
+                          <td width='164'><div align='center'>IN</div></td>
+                          <td width='109'><div align='center'>OUT</div></td>
+                          <td width='100'><div align='center'>Male</div></td>
+                          <td width='89'><div align='center'>Female</div></td>
+                          <td width='89'><div align='center'>Both</div></td>
+                        </tr>
+                        <tr>
+
+
+
+
+                        <td>Main Church</td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>
+                         1:00
+                          </div></td>
+                          <td class=''><div align='center'>2:00PM</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                              <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='right'>₱0.00</div></td>
+                        </tr>
+                        <tr class='bg-info'>
+                          <td height='24' class=''><strong>SUBTOTAL:</strong></td>
+                          <td colspan='7' class=''><div align='right'></div></td>
+                          <td class=''><div align='right'><label>₱0.00</label></div></td>
+                        </tr>
+
+            
+
+
+
+
+                    </table></div>
+                                    </div></div></div>
+                 
+
+
+<!-- end event type -->
+
+
+
+
+
+
+  <!--  other facility -->
+
+        
+
+
+
+                                  <div class='panel panel-primary'>
+
+                                  <div class='panel-heading'>Jpullock</br>Other Facility</div>
+                                  <div class='panel-body'>
+
+
+   <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+
+                                     <table width='100%' border='1' class='bg-warning' id='wrapper'>
+                        <tr class='bg-success'>
+                          <td width='161' rowspan='2'><div align='center'><strong>Room Number</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Dates</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Time</strong></div></td>
+                          <td colspan='3'><div align='center'><strong>Total Number of Persons</strong></div></td>
+                          <td width='160' rowspan='2'><div align='center'><strong>Amount</strong></div></td>
+                        </tr>
+                        <tr class='bg-success'>
+                          <td width='186'><div align='center'>IN</div></td>
+                          <td width='174'><div align='center'>OUT</div></td>
+                          <td width='164'><div align='center'>IN</div></td>
+                          <td width='109'><div align='center'>OUT</div></td>
+                          <td width='100'><div align='center'>Male</div></td>
+                          <td width='89'><div align='center'>Female</div></td>
+                          <td width='89'><div align='center'>Both</div></td>
+                        </tr>
+                        <tr>
+
+
+
+                       
+
+                        <td>Gasebo</td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>
+                         1:00
+                          </div></td>
+                          <td class=''><div align='center'>2:00PM</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                              <td class=''><div align='center'>1</div></td>
+                          <td class=''><div align='right'>₱0.00</div></td>
+                        </tr>
+                        <tr class='bg-info'>
+                          <td height='24' class=''><strong>SUBTOTAL:</strong></td>
+                          <td colspan='7' class=''><div align='right'></div></td>
+                          <td class=''><div align='right'><label>₱0.00</label></div></td>
+                        </tr>
+
+       
+
+
+
+
+
+                     </table>
+
+
+                                             
+                                </div></div>
+                                  </div>
+                            </div>
+
+
+
+<!-- requirement -->
+
+      
+
+
+                              <div class='panel panel-primary'>
+
+                                  <div class='panel-heading'>sdasdasdasd</br>Other Requirements</div>
+                                  <div class='panel-body'>
+
+   <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+
+                                     <table width='100%' border='1' class='bg-warning' id='wrapper'>
+                        <tr class='bg-success'>
+                          <td width='161' rowspan='2'><div align='center'><strong>Requirement</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Dates</strong></div></td>
+                          <td colspan='2'><div align='center'><strong>Inclusive Time</strong></div></td>
+                          <td colspan='1'><div align='center'><strong>Total Number of Persons</strong></div></td>
+                          <td width='160' rowspan='2'><div align='center'><strong>Amount</strong></div></td>
+                        </tr>
+                        <tr class='bg-success'>
+                          <td width='186'><div align='center'>IN</div></td>
+                          <td width='174'><div align='center'>OUT</div></td>
+                          <td width='164'><div align='center'>IN</div></td>
+                          <td width='109'><div align='center'>OUT</div></td>
+                          <td width='109'><div align='center'>Total Unit Requested</div></td>
+                     
+                        </tr>
+                        <tr>
+
+
+
+       
+
+                       
+
+                     
+                        <td >Linen</td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>11-02-2015</div></td>
+                          <td class=''><div align='center'>
+                        1:00PM
+                          </div></td>
+                          <td class=''><div align='center'>1:00PM</div></td>
+                          <td class=''><div align='center'>1</div></td>
+                           <td class=''><div align='right'>₱0.00</div></td>
+                  
+                  
+                        </tr>
+                        <tr class='bg-info'>
+                          <td height='24' class=''><strong>SUBTOTAL:</strong></td>
+                          <td colspan='5' class=''><div align='right'></div></td>
+                          <td class=''><div align='right'><label>₱0.00</label></div></td>
+                        </tr>
+
+                     
+
+              
+      
+
+
+                     </table>
+
+                             </div></div>
+                                  </div>
+                            </div>
+
+
+                          <div class='panel panel-primary'>
+                        
+                  <div class='panel-body'>
+
+                    <table width='100%' height='40' border='0' align='right'>
+                      <tr class='bg-info'>
+                        <td width='162' ><strong>GRAND TOTAL:</strong></td>
+                        <td width='162' height='34' ><h4 align='right'>&nbsp;</h4></td>
+                        <td width='170' class=''><h4 align='right'><u style='border-bottom:1px solid black;'><strong>0.00</strong></h4></td>
+                      </tr>
+                    </table>
+                    
+                 </div>
+               
+            </div>
+                            
+
+           
+           
+
+                 <div class="panel panel-primary">
+                  <div class="panel-heading"> <span class="bg-primary h4"><strong>John Pollock SJ Renewal Center<br>
+                  </strong> <span class="f">Confirmation</span></div>
+                  <div class="panel-body">
+                    
+  
+   <div class='mygrid-wrapper-div'>
+                       
+
+                    <div class='responsive'>
+                       
+                        <div class="panel-body">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-pills">
+                            <li class="active"><a href="#home-pills" data-toggle="tab">Approve</a></li>
+                            <li><a href="#profile-pills" data-toggle="tab">Reject</a></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div class="tab-pane fade in active" id="home-pills">
+                              <h4>CONTROL NO.: JPRC14-11-0001</h4>
+                              <p>Your reservation has been approved.</p>
+                              <p>You may now process your payment through the following:</p>
+                              <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. Cash or Check Payable to Ateneo de Manila University</strong></p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Print the Statement of Account</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Fill-up the Turn-Over Report below the Statement of Account</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Submit and pay to the cashier windows 7 or 8 at Xavier hall</p>
+                              <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B. Via Metrobank Bills Payments Facility</strong></p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Indicate the name of theOrganizer , and the Control Number ( Refer to the Statement of Account )</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Account Name: Ateneo de Manila University</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Subscriber No.: 906 JPRC</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Reference: Lodging</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Kindly send us the copy of the deposit slip via e-mail or fax ( ecabanlit@ateneo.edu / Fax No.: 426-60-69 )</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Please wait for your Payment to be posted in 2-3 working days</p>
+                              <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C. Budget Transfer</strong> ( For those with Ateneo Budget Account only )</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Print  the statement of accont</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Accomplish the box below and fill up the budget transfer box</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Have it signed by the authorized signatory</p>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Submit to the MPAO Office</p>
+    
+                              <form name="form1" method="post" action="{{URL::route('send-email')}}">
+
+                                <input type="hidden" name="typeemail" value="1" />
+                                <label>
+                                  <textarea name="msgsend" cols="80" rows="3" id="textarea" style="width:100%;"></textarea>
+                                </label>
+                                  <p>
+                                <input  type="submit" class="btn-primary btn-lg" id="button2" value="Submit">
+                              </p>
+                              </form>
+                            
+                            </div>
+
+
+
+                          <!--   REJECT -->
+
+
+                            <div class="tab-pane fade" id="profile-pills">
+                              <h4></h4>
+                              <p>Sorry, but the facility you are reserving is not available.Please choose another date.</p>
+                              <p>
+                             
+                              <form name="form1" method="post" action="{{URL::route('send-email')}}">
+
+                                <input type="hidden" name="typeemail" value="2" />
+                                <label>
+                                  <textarea name="msgsend" cols="80" rows="3" id="textarea" style="width:100%;"></textarea>
+                                </label>
+
+                                  <p>
+                                <input type="submit" class="btn-primary btn-lg" id="button" value="Submit">
+                              </p>
+
+                              </form>
+                              </p>
+                            
+                        
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.panel-body -->
+
+                      </div></div>  
+                  </div>
+
+
+
+
+                      <!-- /.panel -->
+                </div>
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+      <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#example1').datepicker({
+                    format: "yyyy-mm-dd"
+                });  
+         
+            });
+
+              $(document).ready(function () {
+                
+                $('#example2').datepicker({
+                    format: "yyyy-mm-dd"
+                });  
+         
+            });
+
+
+              
+
+        </script>
+
+
+
+ </body>
+</html>
+
+
+
+
+

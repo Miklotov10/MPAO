@@ -1,0 +1,747 @@
+
+<!Doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Ateneo</title>
+
+        <link href ="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/datepicker.css">
+        
+
+<style>
+.mygrid-wrapper-div {
+  
+    overflow: scroll;
+}
+
+  .alignRight { text-align: right; }
+
+</style>
+
+
+<script language="javascript" type="text/javascript" class="init">
+
+$(function() {  
+    var window_height = $(window).height(),
+       content_height = window_height - 200;
+
+    $('.mygrid-wrapper-div').height(content_height);
+});
+
+$( window ).resize(function() {
+    var window_height = $(window).height(),
+       content_height = window_height - 200;
+    $('.mygrid-wrapper-div').height(content_height);
+});
+
+$(document).ready(function(){
+    $(".hoverDiv").hover(function(){
+        $(this).css('boxShadow' ,"4px 8px 12px #056bac");
+    }, function(){
+        $(this).css('boxShadow' ,"4px 8px 12px #313332");
+    });
+});
+
+</script>
+
+     </head>
+
+    <body>
+
+<!-- details resevation -->
+
+
+<div class = "panel panel-primary" >
+
+
+		<div class = "panel-heading">Jpollock</br>Reservation Form
+
+	</div>
+   				<div class="panel-body">
+
+            <div class="alert alert-info"></br>
+
+           
+
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Title of activity:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Sleeping</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Date:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>03-12-2015</label>
+                </div>
+
+                </div></br>
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Nature of activity:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Logging</label>
+                </div>
+
+                  <div class = "col-md-2">
+                <label>Mobile Number:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>09125023105</label>
+                </div>
+                </div></br>
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label>Name of Organizer:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Arnel Cabinti</label>
+                </div>
+                  <div class = "col-md-2">
+                <label>Email Address:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>dada@yahoo.com</label>
+                </div>
+                </div></br>
+
+                  <div class="row">
+              <div class = "col-md-3">
+              <label>Authorized Representative:</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Jobel Panes</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Fax or Landline:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>123-4569</label>
+                </div>
+
+
+                </div></br>
+
+                  <div class="row">
+              <div class = "col-md-3">
+              <label>Position</label>
+                </div>
+              <div class = "col-md-4">
+                <label>Manager</label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>Address:</label>
+                </div>
+                <div class = "col-md-2">
+                <label>#10 diamon st. Quezon City</label>
+                </div>
+                </div></br>
+
+
+                <div class="row">
+              <div class = "col-md-3">
+              <label></label>
+                </div>
+              <div class = "col-md-4">
+                <label></label>
+                </div>
+
+                <div class = "col-md-2">
+                <label>No of Person</label>
+                </div>
+                <div class = "col-md-2">
+                <label>12</label>
+                </div>
+                </div></br>
+
+
+               </div>
+
+   				</div>
+
+   				</div>
+
+
+
+<!-- rooms with aircon -->
+
+          <div class="panel panel-primary">
+
+              <div class = "panel-heading">JPollock</br>Airconditioned Bedrooms</br>
+            </div>
+            <div class="panel-body">
+  
+
+              <div class="mygrid-wrapper-div" >
+
+                          <table width="100%" border="1" class="bg-warning" id="wrapperkl" >
+
+                         <tr class="bg-success">
+                          <td width="286" rowspan="2"><div align="center"><strong>Room Number</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Inclusive Dates</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Inclusive Time</strong></div></td>
+                           <td colspan="3"><div align="center" style="Min-width:200px"><strong>Total Number of Persons</strong></div></td>
+          
+                          <td width="161" rowspan="2" ><div align="center"><strong>Add</br>Reservation</strong></div></td>
+                        </tr>
+
+                        <tr class="bg-success">
+                          <td width="127"><div align="center">IN</div></td>
+                          <td width="102"><div align="center">OUT</div></td>
+                          <td width="142"><div align="center">IN</div></td>
+                          <td width="138"><div align="center">OUT</div></td>
+                          <td width="99"><div align="center">Male</div></td>
+                          <td width="88"><div align="center">Female</div></td>
+                          <td width="88"><div align="center">Bothdenger</div></td>
+
+
+                        </tr>
+
+
+
+
+ 
+                  <form method='post' action='".URL::route('postReservation-cart')."' class='form-horizontal' role='form'>
+
+                      
+     
+                      <tr><td class=''><div align='left'><strong><label style='Margin-left:1em;'>dsadasd</strong></div></td>
+                          <td rowspan='3' style='Min-width:180px;' ><div align='center' >
+                            
+                         
+                              <input type=date  name='' required>
+
+                          </div></td>
+                          <td rowspan='3' style='Min-width:180px;' ><div align='center'>
+
+                             <input type=date  name='' required >
+
+                          </div></td>
+                     <td rowspan='3' style='Min-width:130px;'  ><div align='center'>
+                            <input type=time  name='' required>
+                          </div></td>
+                       <td rowspan='3' style='Min-width:130px;' ><div align='center'>
+                            <input type=time name='' required>
+                          </div></td>
+
+
+                     
+                            <td rowspan='3' style='Min-width:50px;'><div align='center'>
+                            <select name='' class='form-control' required>
+
+                          
+
+                                <option value="1">1</option>
+                          
+                       
+                       </select>
+                          </div></td>
+                          <td rowspan='3'style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' required>
+                          
+
+                                <option value="1">1</option>
+                          
+
+                             </select></div></td>
+
+
+                          <td rowspan='3'style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' disabled>
+
+                         
+
+                                 <option value="1">1</option>
+                             
+
+                            </select></div></td><input type='hidden' value=0 name=''>
+
+
+      
+                   
+                       <td rowspan='3' style='Min-width:100px;'><center> <button type='submit' class='btn btn-success bg-lg'><span class='glyphicon glyphicon-plus'></span> Add</button></center></td>
+                        </tr>
+
+                       <tr>
+                          <td style='Min-width:200px'><label style='Margin-left:1em;'>Regular Price :1200</label></td>
+                        </tr>
+                        <tr>
+                          <td><label style='Margin-left:1em;'>Succeding Price : 1200</label></td>
+                        </tr>
+
+                    </form>
+
+                  
+
+</table>
+
+                
+</div>
+
+            </div>
+          </div>
+
+<!-- rooms without aircon -->
+
+
+          <div class="panel panel-primary"> 
+
+              <div class = "panel-heading">jPollock</br>No Airconditioned Bedrooms</br>
+            </div>
+            <div class="panel-body"> 
+
+
+              <div class="mygrid-wrapper-div" >
+
+                          <table width="100%" border="1" class="bg-warning" id="wrapperkl" >
+
+                         <tr class="bg-success">
+                          <td width="286" rowspan="2"><div align="center"><strong>Room Number</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Inclusive Dates</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Inclusive Time</strong></div></td>
+                           <td colspan="3"><div align="center" style="Min-width:200px"><strong>Total Number of Persons</strong></div></td>
+          
+                          <td width="161" rowspan="2" ><div align="center"><strong>Add</br>Reservation</strong></div></td>
+                        </tr>
+
+                        <tr class="bg-success">
+                          <td width="127"><div align="center">IN</div></td>
+                          <td width="102"><div align="center">OUT</div></td>
+                          <td width="142"><div align="center">IN</div></td>
+                          <td width="138"><div align="center">OUT</div></td>
+                          <td width="99"><div align="center">Male</div></td>
+                          <td width="88"><div align="center">Female</div></td>
+                          <td width="88"><div align="center">Bothdenger</div></td>
+                        </tr>
+
+
+
+          <form method='post' action='' class='form-horizontal' role='form'>
+
+                      
+                       
+
+                     <tr><td class=''><div align='left'><strong><label style='Margin-left:1em;'>asdasdasd</strong></div></td>
+                          <td rowspan='3' style='Min-width:180px;' ><div align='center' >
+                            
+                               
+                          
+
+                              <input type=date  name='' required>
+
+                          </div></td>
+                          <td rowspan='3' style='Min-width:180px;' ><div align='center'>
+
+                             <input type=date  name='' required >
+
+                          </div></td>
+                    <td rowspan='3' style='Min-width:130px;'  ><div align='center'>
+                            <input type=time  name=''required>
+                          </div></td>
+                       <td rowspan='3' style='Min-width:130px;' ><div align='center'>
+                            <input type=time name='' required>
+                          </div></td>
+
+
+                        
+                            <td rowspan='3' style='Min-width:50px;'><div align='center'>
+                            <select name='' class='form-control' required>
+
+                             
+                                <option value="1">1</option>
+                        </select>
+                          </div></td>
+                          <td rowspan='3'style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' required>
+
+                            
+                                 <option value="1">1</option>
+                            
+
+                             </select></div></td>
+
+
+                         <td rowspan='3'style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' disabled>
+
+                         
+
+                                <option value="1">1</option>
+                        
+                    </select></div></td><input type='hidden' value=0 name=''>
+
+
+
+                       <td rowspan='3' style='Min-width:100px;'><center> <button type='submit' class='btn btn-success bg-lg'><span class='glyphicon glyphicon-plus'></span> Add</button></center></td>
+                        </tr>
+
+                      <tr>
+                          <td style='Min-width:200px'><label style='Margin-left:1em;'>Regular Price :1200</label></td>
+                        </tr>
+                        <tr>
+                          <td><label style='Margin-left:1em;'>Succeding Price : 1200</label></td>
+                        </tr>
+
+                   </form>
+
+                  
+
+
+
+</table>
+
+                
+</div>
+
+            </div>
+          </div>
+
+
+<!-- other facility -->
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">Jpollock</div>
+            <div class="panel-body">
+
+                   <div class="mygrid-wrapper-div" >
+                       
+
+                    <div class="responsive">
+  <table width="90%" border="1" class="bg-warning" id="wrapperkl" >
+
+                         <tr class="bg-success">
+                          <td width="100" rowspan="2"><div align="center"><strong>Rentable Space</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>With Aircon</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Without Aircon</strong></div></td>
+
+
+                        </tr>
+
+                        <tr class="bg-success">
+                          <td width="100"><div align="center">Regular Rate</div></td>
+                          <td width="100"><div align="center">Succeeding Rate</div></td>
+                          <td width="100"><div align="center">Regular Rate</div></td>
+                          <td width="100"><div align="center">Succeeding Rate</div></td>
+                        </tr>
+
+                 
+
+    
+
+      <tr><td class=''><div align='left'><strong><label style='Margin-left:1em;'>".$otherresult[1]."</strong></div></td>
+                          <td  style='Min-width:180px;' ><div align='center' >
+                            
+                              <label style='float:right;margin-right:1em;'>asdasdasd</label>
+
+                          </div></td>
+                          <td  style='Min-width:180px;' ><div align='center'>
+
+                            <label style='float:right;margin-right:1em;'>asdasdasd</label>
+                          </div></td>
+                     <td style='Min-width:130px;'  ><div align='center'>
+                            <label style='float:right;margin-right:1em;'>asdasd</label>
+                          </div></td>
+                       <td  style='Min-width:130px;' ><div align='center'>
+                         <label style='float:right;margin-right:1em;'>asdasdsa</label>
+                          </div></td></tr>
+
+
+
+                      </table>
+
+</br></br>
+
+                       
+
+                          <table width="100%" border="1" class="bg-warning" id="wrapperkl" >
+
+                         <tr class="bg-success">
+                          <td  colspan="2" ><div align="center"><strong>Rent</strong></div></td>  
+                          <td colspan="2"><div align="center"><strong>Inclusive Dates</strong></div></td>
+                          <td colspan="2"><div align="center"><strong>Inclusive Time</strong></div></td>
+                           <td colspan="3"><div align="center" style="Min-width:200px"><strong>Total Number of Persons</strong></div></td>
+          
+                          <td width="161" rowspan="2" ><div align="center"><strong>Add</br>Reservation</strong></div></td>
+                        </tr>
+
+                        <tr class="bg-success">
+
+                           <td width="127"><div align="center">Space</div></td>
+                          <td width="102"><div align="center">Type</div></td>
+
+                          <td width="127"><div align="center">IN</div></td>
+                          <td width="102"><div align="center">OUT</div></td>
+                          <td width="142"><div align="center">IN</div></td>
+                          <td width="138"><div align="center">OUT</div></td>
+                          <td width="99"><div align="center">Male</div></td>
+                          <td width="88"><div align="center">Female</div></td>
+                          <td width="88"><div align="center">Bothdenger</div></td>
+                        </tr>
+
+
+
+
+    
+        <form method='post' action='' class='form-horizontal' role='form'>
+
+                      
+                  
+
+                     <tr>
+
+                          <td style='Min-width:180px;'>
+                            
+                               
+                        <strong><label style='Margin-left:1em;'>dasdasd</strong></div>
+
+                           
+
+                          </td>
+
+                         
+                          <td  style='Min-width:180px;'><div align='center'>
+                            
+                            <select style='width:150px;' class='form-control' name=''>
+
+                            <option value=' '>---------</option >
+
+                          
+                            <option value=''>Without Aircon</option>
+
+                            <option value=''>With Aircon</option>
+
+
+
+                            
+                         </select>
+                          
+
+
+                          </div></td>
+
+
+
+
+                          <td  style='Min-width:180px;'><div align='center'>
+                            
+                               
+                          
+
+                              <input type=date  name='' required>
+
+                          </div></td>
+                          <td  style='Min-width:180px;' ><div align='center'>
+
+                             <input type=date  name='' required >
+
+                          </div></td>
+                     <td style='Min-width:130px;'  ><div align='center'>
+                            <input type=time  name='' required>
+                          </div></td>
+                      <td style='Min-width:130px;' ><div align='center'>
+                            <input type=time name='' required>
+                          </div></td>
+
+
+                   
+                            <td  style='Min-width:50px;'><div align='center'>
+                            <select name='' class='form-control' required>
+
+                           <option value="1">1</option>
+                    </select>
+                          </div></td>
+                          <td style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' required>
+
+                            
+                               <option value="1">1</option>
+                         
+
+                            </select></div></td>
+
+
+                           <td style='Min-width:50px;' ><div align='center'>
+                            <select name='' class='form-control' disabled>
+
+                           
+                                <option value="1">1</option>
+                            
+                           </select></div></td>
+
+                           <input type='hidden' value=0 name=''>
+
+                        
+
+                    
+
+                      
+       
+                      <td  style='Min-width:100px;'><center> <button type='submit' class='btn btn-success bg-lg'><span class='glyphicon glyphicon-plus'></span> Add</button></center></td>
+                    </form>
+
+
+
+
+          </table>
+
+
+
+                    </div> 
+                    
+                    </div> 
+
+          
+      </div>
+
+          </div>
+
+
+          <!-- reserved requirement -->
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">Jpulloc</br>Requirements</br></div>
+            <div class="panel-body">
+
+ 
+
+
+                   <div class="mygrid-wrapper-div" >
+                       
+
+                    <div class="responsive">
+
+                           <table width="100%" border="1" class="bg-warning" id="wrapperkl" >
+
+                              <thread>
+                                <tr class="bg-success">
+                                  <td style="min-width:150px;">
+                                      <center><label>Particulars</label></br></center>
+                                  </td>
+                                   <td style="min-width:150px;">
+                                      <center><label>Date From</label></br></center>
+                                  </td>
+                                   <td style="min-width:150px;">
+                                      <center><label>Date To</label></br></center>
+                                  </td>
+                                   <td style="min-width:150px;">
+                                      <center><label>Time From</label></br></center>
+                                  </td>
+                                   <td style="min-width:150px;">
+                                      <center><label>Time to</label></br></center>
+                                  </td>
+                                  <td style="min-width:100px;">
+                                     <center><label>No of Unit Requested</label></br></center>
+                                  </td>
+                                    <td style="min-width:100px;">
+                                    <center><label> Cost Per Unit</label></br></center>
+                                  </td>
+                                    <td style="min-width:100px;" >
+                                    <center><label>Add Requirements</label></br></center>
+                                  </td>
+                                </tr>
+                              </thread>
+
+                              <tbody>
+
+                              
+
+                               <form  action="" method='post' class='form-horizontal' role='form'><tr>
+
+                                    <td><label style='Margin-left:1em;'>linen</label></td>
+                                     <center><td> <input type=date  name='' required ></td>
+                                      <td><input  type=date   name='datetore' required ></td>
+                                       <td> <input type=time style='Margin-left:1em;Margin-right:1em;'   name='timefromre' required></td>
+                                        <td> <input type=time style='Margin-left:1em;'  name='' required></td></center>
+                                    <td>
+      
+                                        <center><select style='min-width:80%;' name='' required>
+
+                                   </select></center>
+
+                                    </td>
+
+
+                                    <td><center><label style='Margin-left:1em;'>12000</label></td><center>
+
+
+                                    <td><center> <button type='submit' style='min-width:150px; margin-top:1em;margin-bottom:1em' class='btn btn-success bg-lg'><span class='glyphicon glyphicon-plus'></span> Add</button></center></td>
+
+
+
+
+                                  </tr> </form>
+
+
+
+
+                       
+
+                              </tbody>
+
+
+
+                          </table>
+
+
+
+                    </div> 
+                    
+                    </div> 
+
+              </div>
+
+          </div> 
+
+
+    
+
+        <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+      <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#example1').datepicker({
+                    format: "yyyy-mm-dd"
+                });  
+         
+            });
+
+              $(document).ready(function () {
+                
+                $('#example2').datepicker({
+                    format: "yyyy-mm-dd"
+                });  
+         
+            });
+
+
+              
+
+        </script>
+
+
+
+ </body>
+</html>
+
+             
+
+         
+
+
+
+
+
+ 

@@ -1,0 +1,200 @@
+
+<!Doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<title>Ateneo</title>
+
+		<link href ="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<script type="text/javascript" language="javascript" src="js/mediajquery.js"></script>
+	</head>
+	<body>
+		<div class = "panel panel-primary">
+			<div class = "panel-heading">Jpollock</br>Availability</div>
+			<div class = "panel-body" >
+				<div class="alert alert-info"></br>
+					<div class="row">
+						<div class="col-md-3 .col-md-offset-3" >
+							<label>Choose facility: </label>
+						</div>
+						<center></br>
+	  					<div class="col-md-3 .col-md-offset-3" >
+							<label>Rentable Spaces: </label>
+							<select class="combobox" style="max-width: 500p;">					
+								<option value="  ">----------------------------</option>
+							</select>
+						</div>
+						<div class="col-md-3 .col-md-offset-3">
+						  	<label>Other Facilities: </label>
+						  	<select class="combobox" style="max-width: 500p;">
+								<option value="  ">----------------------------</option>
+							</select>
+
+
+						</div>
+						</center>
+					</div>			
+					</br>
+				</div>
+			</div>
+	 	</div>
+		<div class = "panel panel-primary">
+			<div class = "panel-heading">
+				<img src = "images/calendarlogo.png" width="77" height="76" /> Calendar
+			</div>
+			<div class = "panel-body">
+				This where the calendar palce.
+			</div>
+		</div>
+		<div class = "panel panel-primary">
+			<div class = "panel-heading">Jpollock</br>Reservation Form</div>
+			<div class="panel-body">
+			<div class="row">
+				<div class="col-md-6">
+					<div class = "alert alert-info">
+						<form method="post" action="" class="form-horizontal" role="form">
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Title of Activity:</label>
+								</div>
+								<div class = "col-md-6">
+									<input type = "text" name="title" class="form-control" placeholder ="Title of Activity"  />
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Nature of Activity:</label>
+								</div>
+								<div class = "col-md-6">
+								  	<select class="combobox" name="nature" style="max-width:250px;min-width:200px;      ">
+										<option value="  ">----------------------------</option>
+								  	</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Date of Activity:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Click to show datepicker" name="date_activity"  id="example1" class="form-control" >
+								</div>
+							</div>
+							</br><b><hr></b>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Name of Organizer:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Name of Organizer" name="organizer"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Authorized Representative:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Authorized Representative" name="representative"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Position:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Position" name="position"  class="form-control">
+								</div>
+							</div></br><hr>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>St/Brgy:</label>
+								</div>
+								<div class = "col-md-6">
+									<textarea  placeholder="St / Brgy" name="St_Brgy" row="5"  class="form-control"></textarea>
+								</div>
+							</div></br>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>City</label>
+								</div>
+								<div class = "col-md-6">
+									<select class="combobox" name="city" style="max-width:250px;min-width:200px;">
+										<option value="  ">----------------------------</option>
+									</select> 
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Email Address:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Email Address" name="email"  class="form-control">
+								</div>
+							</div></br>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Mobile Number:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Mobile Number" name="mobile"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>Landline or Fax:</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Landline or Fax" name="landline"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-md-4">
+									<label>No. of person</label>
+								</div>
+								<div class = "col-md-6">
+									<input  type="text" placeholder="Number of Person" name="person"  class="form-control">
+								</div>
+							</div>								  
+							<div class="row">
+								<div class = "col-md-4"></div>
+								<div class = "col-md-6">
+									<div class="span6 pull-right" style="text-align:right">
+								 		<input type = "submit" value ="Submit" class="btn btn-primary btn-lg">
+								 	</div>
+								</div>
+							</div></br>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class = "alert alert-info">
+						<center>Use Cost</center></br>
+						Description Here
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript">
+		// When the document is ready
+		$(document).ready(function () {
+			
+			$('#example1').datepicker({
+				format: "yyyy-mm-dd"
+			});  
+			
+			$('#example2').datepicker({
+				format: "yyyy-mm-dd"
+			});  
+	 
+		});
+	</script>
+</body>
+</html>
+
+
+
+
